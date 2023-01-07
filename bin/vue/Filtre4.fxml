@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="660.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Filtre4Controller">
+   <children>
+      <TableView fx:id="table" layoutX="5.0" layoutY="70.0" prefHeight="452.0" prefWidth="886.0">
+        <columns>
+          <TableColumn fx:id="mat" prefWidth="75.0" text="Matricule" />
+          <TableColumn fx:id="nom" prefWidth="82.0" text="Nom" />
+            <TableColumn fx:id="mail" prefWidth="289.0" text="Email" />
+            <TableColumn fx:id="cat" prefWidth="94.0" text="Categorie" />
+            <TableColumn fx:id="sal" prefWidth="164.0" text="Salaire" />
+            <TableColumn fx:id="rec" prefWidth="181.0" text="recrutement" />
+        </columns>
+      </TableView>
+      <Text layoutX="24.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des salariers ayants le plus faible salaire:" wrappingWidth="493.64453125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="739.0" layoutY="21.0" mnemonicParsing="false" onAction="#RemplirList" prefHeight="40.0" prefWidth="150.0" text="Afficher Salarier" />
+   </children>
+</AnchorPane>

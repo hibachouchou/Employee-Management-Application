@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListeEmployees">
+   <children>
+      <Text layoutX="20.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Employees :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="725.0" layoutY="62.0" mnemonicParsing="false" onAction="#RemplirList" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #70e0a7;" text="Afficher employees" />
+      <TableView fx:id="table" layoutX="-1.0" layoutY="118.0" prefHeight="469.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="mat" prefWidth="75.0" text="Matricule" />
+          <TableColumn fx:id="cat" prefWidth="75.0" text="Categorie" />
+            <TableColumn fx:id="nom" prefWidth="84.0" text="Nom" />
+            <TableColumn fx:id="mail" prefWidth="214.0" text="Email" />
+            <TableColumn fx:id="pct" prefWidth="81.0" text="Pourcentage" />
+            <TableColumn fx:id="mt" prefWidth="66.0" text="Montant" />
+            <TableColumn fx:id="nbH" prefWidth="112.0" text="NB Heures supp" />
+            <TableColumn fx:id="rec" prefWidth="88.0" text="Recrutement" />
+            <TableColumn fx:id="sal" prefWidth="96.0" text="Salaire" />
+        </columns>
+      </TableView>
+      <Button layoutX="540.0" layoutY="62.0" mnemonicParsing="false" onAction="#AfficherDetails" prefHeight="40.0" prefWidth="169.0" style="-fx-background-color: #ffa500;" text="Afficher détails emplyoee" />
+   </children>
+</AnchorPane>
