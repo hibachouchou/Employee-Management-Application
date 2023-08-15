@@ -1,2 +1,2 @@
 # Employee Management Application
- CRUD (fxml + Java)
+ CRUD APP (fxml + Java)
