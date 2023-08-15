@@ -1,2 +1,2 @@
-# Application de gestion employées 
+# Employee Management Application
  CRUD (fxml + Java)
